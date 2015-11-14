@@ -18,7 +18,7 @@ published: true
 							<div class="img-post img-post-youtube" style="background-image: url('http://img.youtube.com/vi/{{ post.thumbnail }}/{% if post.res %}{{ post.res }}{% else %}maxres{% endif %}default.jpg');">
 							{% else %}
 								{% if post.thumbnail %}
-							<div class="img-post img-post-portfolio" style="background-image: url('{{ post.thumbnail | prepend: site.baseurl }}');">
+							<div class="img-post img-post-portfolio" style="background-image: url('{{ site.baseurl }}{{ post.thumbnail }}');">
 								{% elsif post.externallink %}<!--- TODO replace this with a reference to a placeholder clip --->
 							<div class="img-post img-post-portfolio" style="background-image: url('{{ post.externallink }}');">
 								{% else %}<!--- TODO replace this with a reference to a placeholder clip --->
