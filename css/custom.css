@@ -1,0 +1,277 @@
+html,
+body {
+    height: 100%;
+	color: #000;
+    background-color: #ddd;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: "Novecentowide-Normal";
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+	font-family: "Novecentowide-Normal";
+    margin: 0 0 25px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media(min-width:768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: #333;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #000;
+}
+
+a.post-link{
+	color: #989494;
+}
+
+a.post-link:hover,
+a.post-link:focus{
+	color: #686464;
+}
+
+.container{
+	width: 97%;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+	padding: 0 .3125em .625em;
+}
+	
+/* This carousel is meant as the main header ful page version and is required to be fixed to top in order for other object to scroll over it */
+.carousel{
+    height: 100%;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	z-index: 0;
+}
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Navbar custom styles */
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: "Novecentowide-Normal";
+	font-size: 15px;
+background: rgba(90, 0, 0, 0.67);
+}
+.navbar-custom a,
+.navbar-custom .nav .dropdown-menu a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a,
+.navbar-custom .nav .dropdown-menu li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+	text-shadow: 0.05em 0.05em 0.05em #000;
+	font-size: 11px;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav .dropdown-menu li a:hover {
+    outline: 0;
+    background-color: rgba(90, 0, 0, 0.67);
+	text-shadow: none;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active{
+    outline: 0;
+   
+	text-shadow: none;
+}
+
+.navbar-custom .nav li.active a,
+.navbar-custom .nav .dropdown-menu li.active a: {
+    background-color: rgba(255,255,255,.3);
+	text-shadow: none;
+}
+
+.navbar-custom .nav .dropdown-menu{
+	outline: 0;
+	background: rgba(90, 0, 0, 0.67);
+	min-width: 100%;
+}
+
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 5px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+		text-shadow: none;
+		font-size: 15px;
+		background: rgba(10, 10, 10, 0.67);
+    }
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: rgba(90, 0, 0, 0.67);
+    }
+}
+/* justifies the alignment of nav menu items */
+.nav-justified > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-align: center;
+ 
+}
+
+/* photofolio page paginated posts */
+.img-post{
+	min-height: 300px;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	display: block;
+}
+.img-post-portfolio{
+}
+
+.img-post-beauty{
+}
+
+.img-post-fashion{
+}
+.post-hover-outer{
+	display: block;
+	padding: 0.5em;
+	font-size: 2em;
+}
+.post-hover{
+	background: rgba(240,240,240,0.7);
+	color: #000;
+	opacity: 0;
+	display: table;
+	min-height: 300px;
+	width: 100%;
+	height: 100%;
+}
+.post-hover span{
+	font-family: 'Amiri', serif;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+ul li:hover span.post-hover {
+	opacity: 1;
+}
+
+section{
+	position: relative;
+	padding-top: 150px;
+	background-color: #fff;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+/* full page video styles */
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+
+/* CUSTOM MEDIA QUERIES */
+
+
+
+/* Smaller than mobile iPhone in Landscape */
+@media (max-width: 767px) {
+    ul.banner-social-buttons li {
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+	.navbar-custom{
+		position: fixed;
+		top: 0;
+	}
+	.navbar-custom{
+		width: 100%;
+		border-bottom: 1px solid rgba(255,255,255,.3);
+        background: rgba(90, 0, 0, 0.90);
+	}
+	
+}
+/* Larger than mobile iPhone in Landscape */
+@media(min-width:767px) {
+   
+}
+/* Medium desktop */
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 0px;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    
+}

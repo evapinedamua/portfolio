@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Novecentowide-Normal';
+    src: url('Novecentowide-Normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Novecentowide-DemiBold';
+    src: url('Novecentowide-DemiBold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

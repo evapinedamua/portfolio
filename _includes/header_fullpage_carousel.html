@@ -1,0 +1,43 @@
+<!-- Full Page Image Background Carousel Header -->
+<header id="myCarousel" class="carousel slide fullpage">
+	<!-- Indicators -->
+	<!---<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>--->
+
+	<!-- Wrapper for Slides -->
+	<div class="carousel-inner">
+		<div class="item active">
+		   <div class="fill" style="background-image:url('{{ base.url }}/img/landing.jpg');"></div>
+				
+			<div class="carousel-caption Blokk-Regular">
+				<!---<h2 class="Blokk-Regular">Latest photoshoot pic</h2>--->
+			</div>
+		</div>
+		<div class="item">
+			<video autoplay loop muted id="background">
+				<source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+			</video>
+			<div class="carousel-caption">
+				<!---<h2>Latest photoshoot mini clip</h2>--->
+			</div>
+		</div>
+		<div class="item">
+			<div class="fill" style="background-image:url('https://placekitten.com/g/1920/1080');"></div>
+			<div class="carousel-caption">
+				<!---<h2>Another pic</h2>--->
+			</div>
+		</div>
+	</div>
+
+	<!-- Controls -->
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span class="icon-prev"></span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span class="icon-next"></span>
+	</a>
+
+</header>

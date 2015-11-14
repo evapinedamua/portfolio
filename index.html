@@ -1,0 +1,104 @@
+---
+layout: photofolio
+published: true
+---
+
+<!DOCTYPE html>
+
+<!-- PORTFOLIO LATEST SECTION --->
+<section id="portfolio_samples">
+	<div class="container content-section text-center">
+		<h2>Portfolio samples</h2>
+		<div style="margin-top:30px;">
+			<ul class="row list-unstyled">
+				{% for post in paginator.posts limit:8 %}
+				<li class="col-sm-3 feature">
+						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+							{% if post.category == 'youtube' %}
+							<div class="img-post img-post-youtube" style="background-image: url('http://img.youtube.com/vi/{{ post.thumbnail }}/{% if post.res %}{{ post.res }}{% else %}maxres{% endif %}default.jpg');">
+							{% else %}
+								{% if post.thumbnail %}
+							<div class="img-post img-post-portfolio" style="background-image: url('{{ post.thumbnail | prepend: site.baseurl }}');">
+								{% elsif post.externallink %}<!--- TODO replace this with a reference to a placeholder clip --->
+							<div class="img-post img-post-portfolio" style="background-image: url('{{ post.externallink }}');">
+								{% else %}<!--- TODO replace this with a reference to a placeholder clip --->
+							<div class="img-post img-post-portfolio" style="background-image: url('{{ site.baseurl }}/img/logo.png');">
+								{% endif %}
+							{% endif %}
+								<span class="post-hover-outer">
+									<span class="post-hover">
+										<span><em>{{ post.title }}<br />{{ post.date | date: "%b %-d, %Y" }}</em></span>
+									</span>
+								</span>
+							</div>
+						</a>
+						
+				</li><!--- ADDED A POST ^ --->
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- Posts Section -->
+<section id="posts">
+	<div class="container content-section text-center">
+		<h2>Latest blog posts</h2>
+		<div style="margin-top:30px;">
+			<div class="row">
+				{% for post in paginator.posts limit:8 %}
+				<div class="col-sm-3 feature">
+						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+							{% if post.category == 'youtube' %}
+							<div class="img-post-beauty" style="background-image: url('http://img.youtube.com/vi/{{ post.thumbnail }}/{% if post.res %}{{ post.res }}{% else %}maxres{% endif %}default.jpg');"></div>
+							{% else %}
+								{% if post.thumbnail %}
+								<div class="img-post-beauty" style="background-image: url('{{ post.thumbnail | prepend: site.baseurl }}');"></div>
+								{% else %}<!--- TODO replace this with a reference to a placeholder clip --->
+								<div class="img-post-beauty" style="background-image: url('{{ site.baseurl }}/img/logo.png');"></div>
+								{% endif %}
+							{% endif %}
+							<h5>
+								<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+							</h5>
+							<span class="post-list post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+						</a>
+						
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- About/Contact snippet Section -->
+<section id="bio_summary">
+	<div class="container content-section text-center">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>Contact</h2>
+				<p>
+					<a href="tel:+44111111111" class="btn btn-large btn-block btn-default visible-xs">
+						<span class="fa fa-phone"></span> Hire Me!
+					</a>
+				</p>
+				<p>Is there some reason that my coffee isn't here? Has she died or something?<br/><small>- Miranda Priestly</small></p>
+				
+				<p>
+					<a href="mailto:info@jkwc.co.uk">Email enquiry</a>
+				</p>
+				<p>
+					Or connect with me on:</a>
+				</p>
+				<ul class="list-inline banner-social-buttons">
+					<li><a href="http://twitter.com/#!/evapinedamua"><i class="fa fa-lg fa-twitter"></i></a></li>
+					<li><a href="http://instagram.com/evapinedamua"><i class="fa fa-lg fa-instagram"></i></a></li>
+				<ul>
+			</div>
+			<div class="col-lg-6">
+				<h2>About</h2>
+				<p>Really? It's for Paris, I'm on this new diet. Well, I don't eat anything and when I feel like I'm about to faint I eat a cube of cheese. I'm just one stomach flu away from my goal weight.</p>
+			</div>
+		</div>
+	</div>
+</section>

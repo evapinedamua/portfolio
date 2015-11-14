@@ -1,0 +1,69 @@
+# Site settings
+title: Eva Pineda 
+email: info@eveyrthingeva.co.uk
+description:
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog/
+url: "http://everythingeva.co,uk" # the base hostname & protocol for your site
+twitter_username: evapinedamua
+paginate: 10
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+
+# prose.io  settings
+prose:
+  siteurl: "http://evapinedamua.github.io/"
+  media: "img"
+  ignore:
+    - .gitignore
+    - Gemfile
+    - Gemfile.lock
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /fonts
+    - /fonts/blokkfont
+    - /fonts/Novecentowide/Novecentowide-DemiBold-webfont.woff
+    - /font-awesome
+    - /js/bootstrap.js
+    - /js/bootstrap.min.js
+    - /js/jquery.js
+    - /js/jquery.easing.min.js
+    - /css/bootstrap.css
+    - /css/bootstrap.min.css
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          placeholder: "A awesome Headline!"
+      - name: "thumbnail"
+        field:
+          label: "Thumbnail"
+          element: "text"
+          placeholder: ""
+      - name: "category"
+        field:
+          element: "select"
+          label: "Choose category"
+          placeholder: "Choose category"
+          alterable: true
+          options:
+            - name: "Text"
+              value: "text"
+            - name: "YouTube"
+              value: "youtube"
+            - name: "News"
+              value: "news"
