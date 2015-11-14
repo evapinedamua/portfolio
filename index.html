@@ -14,22 +14,20 @@ published: true
 				{% for post in paginator.posts limit:8 %}
 				<li class="col-sm-3 feature">
 						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-							{% if post.category == 'youtube' %}
-							<div class="img-post img-post-youtube" style="background-image: url('http://img.youtube.com/vi/{{ post.thumbnail }}/{% if post.res %}{{ post.res }}{% else %}maxres{% endif %}default.jpg');">
-							{% else %}
+							{% if post.category != 'youtube' %}
 								{% if post.thumbnail %}
 							<div class="img-post img-post-portfolio" style="background-image: url('{{ site.baseurl }}{{ post.thumbnail }}');">
 								{% elsif post.externallink %}<!--- TODO replace this with a reference to a placeholder clip --->
 							<div class="img-post img-post-portfolio" style="background-image: url('{{ post.externallink }}');">
 								{% else %}<!--- TODO replace this with a reference to a placeholder clip --->
-							<div class="img-post img-post-portfolio" style="background-image: url('{{ site.baseurl }}/img/logo.png');">
+							<div class="img-post img-post-portfolio" style="background-image: url('{{ site.baseurl }}/img/logo_black.png');">
 								{% endif %}
-							{% endif %}
 								<span class="post-hover-outer">
 									<span class="post-hover">
 										<span><em>{{ post.title }}<br />{{ post.date | date: "%b %-d, %Y" }}</em></span>
 									</span>
 								</span>
+							{% endif %}
 							</div>
 						</a>
 						
@@ -43,30 +41,34 @@ published: true
 <!-- Posts Section -->
 <section id="posts">
 	<div class="container content-section text-center">
-		<h2>Latest blog posts</h2>
+		<h2>Latest Beauty & Fashion Features</h2>
 		<div style="margin-top:30px;">
-			<div class="row">
+			<ul class="row list-unstyled">
 				{% for post in paginator.posts limit:8 %}
-				<div class="col-sm-3 feature">
+				<li class="col-sm-3 feature">
 						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
 							{% if post.category == 'youtube' %}
-							<div class="img-post-beauty" style="background-image: url('http://img.youtube.com/vi/{{ post.thumbnail }}/{% if post.res %}{{ post.res }}{% else %}maxres{% endif %}default.jpg');"></div>
+							<div class="img-post img-post-youtube" style="background-image: url('http://img.youtube.com/vi/{{ post.thumbnail }}/{% if post.res %}{{ post.res }}{% else %}maxres{% endif %}default.jpg');">
 							{% else %}
 								{% if post.thumbnail %}
-								<div class="img-post-beauty" style="background-image: url('{{ post.thumbnail | prepend: site.baseurl }}');"></div>
+							<div class="img-post img-post-portfolio" style="background-image: url('{{ site.baseurl }}{{ post.thumbnail }}');">
+								{% elsif post.externallink %}<!--- TODO replace this with a reference to a placeholder clip --->
+							<div class="img-post img-post-portfolio" style="background-image: url('{{ post.externallink }}');">
 								{% else %}<!--- TODO replace this with a reference to a placeholder clip --->
-								<div class="img-post-beauty" style="background-image: url('{{ site.baseurl }}/img/logo.png');"></div>
+							<div class="img-post img-post-portfolio" style="background-image: url('{{ site.baseurl }}/img/logo_black.png');">
 								{% endif %}
 							{% endif %}
-							<h5>
-								<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-							</h5>
-							<span class="post-list post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+								<span class="post-hover-outer">
+									<span class="post-hover">
+										<span><em>{{ post.title }}<br />{{ post.date | date: "%b %-d, %Y" }}</em></span>
+									</span>
+								</span>
+							</div>
 						</a>
 						
-				</div>
+				</li><!--- ADDED A POST ^ --->
 				{% endfor %}
-			</div>
+			</ul>
 		</div>
 	</div>
 </section>

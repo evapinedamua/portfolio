@@ -91,14 +91,29 @@ a.post-link:focus{
 }
 
 /* Navbar custom styles */
-
+.nav-justified .navbar-logo a{
+	padding: 0;
+}
+.nav-justified .navbar-logo a  img {
+	max-height: 45px;
+}
+/*
+.navbar-custom:before{
+	background-image: url('/img/logo.png');
+	background-repeat: none;
+	content: '';
+	height: 200px;
+	width: 100%;
+	display: block;
+}
+*/
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: "Novecentowide-Normal";
 	font-size: 15px;
-background: rgba(90, 0, 0, 0.67);
+	background: rgba(90, 0, 0, 0.67);
 }
 .navbar-custom a,
 .navbar-custom .nav .dropdown-menu a {

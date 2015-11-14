@@ -11,23 +11,25 @@
 		<div class="collapse navbar-collapse navbar-main-collapse">
 			<ul class="nav nav-justified">
 				<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-				<li class="hidden">
-					<a href="#page-top"></a>
+				<li class="page-scroll navbar-logo">
+					<a href="{% if page.url == '/index.html' %}#page-top{% else %}{{ site.baseurl }}/{% endif %}">
+						<img src="{{ site.baseurl }}/img/logo_white.png" />
+					</a>
 				</li>
-				<li {% if page.title %}{% if page.title == 'portfolio' %} class="active" {% endif %}{% endif %}>
-					<a class="page-scroll" href="{{ 'portfolio' | prepend: site.baseurl }}">Portfolio</a>
+				<li {% if page.url == '/portfolio/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ '/portfolio' | prepend: site.baseurl }}">Portfolio</a>
 				</li>
-				<li {% if page.url == 'beauty/index.html' %} class="active" {% endif %}>
-					<a class="page-scroll" href="{{ 'beauty' | prepend: site.baseurl }}">Beauty</a>
+				<li {% if page.url == '/beauty/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ '/beauty' | prepend: site.baseurl }}">Beauty</a>
 				</li>
-				<li {% if page.url == 'fashion/index.html' %} class="active" {% endif %}>
-					<a class="page-scroll" href="{{ 'fashion' | prepend: site.baseurl }}">Fashion</a>
+				<li {% if page.url == '/fashion/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ '/fashion' | prepend: site.baseurl }}">Fashion</a>
 				</li>
-				<li {% if page.url == 'about/index.html' %} class="active" {% endif %}>
-					<a class="page-scroll" href="{{ 'about' | prepend: site.baseurl }}">About</a>
+				<li {% if page.url == '/about/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ '/about' | prepend: site.baseurl }}">About</a>
 				</li>
-				<li {% if page.url == 'contact/index.html' %} class="active" {% endif %}>
-					<a class="page-scroll" href="{{ 'contact' | prepend: site.baseurl }}">Contact</a>
+				<li {% if page.url == '/contact/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ '/contact' | prepend: site.baseurl }}">Contact</a>
 				</li>
 			</ul>
 		</div>
