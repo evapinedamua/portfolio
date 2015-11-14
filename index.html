@@ -11,28 +11,27 @@ published: true
 		<h2>Portfolio samples</h2>
 		<div style="margin-top:30px;">
 			<ul class="row list-unstyled">
-				{% for post in paginator.posts limit:8 %}
-				<li class="col-sm-3 feature">
+			{% for post in paginator.posts limit:8 %}
+				{% if post.category != 'youtube' %}
+				<li class="col-xs-6 col-sm-3">
 						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-							{% if post.category != 'youtube' %}
-								{% if post.thumbnail %}
+						{% if post.thumbnail %}
 							<div class="img-post img-post-portfolio" style="background-image: url('{{ site.baseurl }}{{ post.thumbnail }}');">
-								{% elsif post.externallink %}<!--- TODO replace this with a reference to a placeholder clip --->
+						{% elsif post.externallink %}<!--- TODO replace this with a reference to a placeholder clip --->
 							<div class="img-post img-post-portfolio" style="background-image: url('{{ post.externallink }}');">
-								{% else %}<!--- TODO replace this with a reference to a placeholder clip --->
+						{% else %}<!--- TODO replace this with a reference to a placeholder clip --->
 							<div class="img-post img-post-portfolio" style="background-image: url('{{ site.baseurl }}/img/logo_black.png');">
-								{% endif %}
+						{% endif %}
 								<span class="post-hover-outer">
 									<span class="post-hover">
 										<span><em>{{ post.title }}<br />{{ post.date | date: "%b %-d, %Y" }}</em></span>
 									</span>
 								</span>
-							{% endif %}
 							</div>
 						</a>
-						
-				</li><!--- ADDED A POST ^ --->
-				{% endfor %}
+				</li>
+				{% endif %}<!--- ADDED A POST ^ --->
+			{% endfor %}
 			</ul>
 		</div>
 	</div>
@@ -45,7 +44,7 @@ published: true
 		<div style="margin-top:30px;">
 			<ul class="row list-unstyled">
 				{% for post in paginator.posts limit:8 %}
-				<li class="col-sm-3 feature">
+				<li class="col-xs-6 col-sm-3">
 						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
 							{% if post.category == 'youtube' %}
 							<div class="img-post img-post-youtube" style="background-image: url('http://img.youtube.com/vi/{{ post.thumbnail }}/{% if post.res %}{{ post.res }}{% else %}maxres{% endif %}default.jpg');">

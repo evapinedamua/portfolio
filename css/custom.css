@@ -186,7 +186,7 @@ a.post-link:focus{
 
 /* photofolio page paginated posts */
 .img-post{
-	min-height: 300px;
+	min-height: 100px;
 	width: 100%;
 	height: 100%;
 	background-size: cover;
@@ -273,7 +273,17 @@ footer {
 		border-bottom: 1px solid rgba(255,255,255,.3);
         background: rgba(90, 0, 0, 0.90);
 	}
-	
+	.img-post{
+		max-height: 116px;
+	}
+	.post-hover{
+		min-height: 100px;
+	}
+	.post-hover-outer{
+		display: block;
+		padding: 0.2em;
+		font-size: 1em;
+	}
 }
 /* Larger than mobile iPhone in Landscape */
 @media(min-width:767px) {
