@@ -14,31 +14,20 @@
 				<li class="hidden">
 					<a href="#page-top"></a>
 				</li>
-				<li>
-					<a class="page-scroll" href="{% if page.url == '/index.html' %}#contact{% else %}{{ '#contact' | prepend: site.baseurl }}{% endif %}">Portfolio</a>
+				<li {% if page.title %}{% if page.title == 'portfolio' %} class="active" {% endif %}{% endif %}>
+					<a class="page-scroll" href="{{ 'portfolio' | prepend: site.baseurl }}">Portfolio</a>
 				</li>
-				<li>
-					<a class="page-scroll" href="{% if page.url == '/index.html' %}#posts{% else %}{{ '#posts' | prepend: site.baseurl }}{% endif %}">Beauty</a>
+				<li {% if page.url == 'beauty/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ 'beauty' | prepend: site.baseurl }}">Beauty</a>
 				</li>
-				<li>
-					<a class="page-scroll" href="{% if page.url == '/index.html' %}#posts{% else %}{{ '#posts' | prepend: site.baseurl }}{% endif %}">Fashion</a>
+				<li {% if page.url == 'fashion/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ 'fashion' | prepend: site.baseurl }}">Fashion</a>
 				</li>
-				<!---<li id="posts-submenu-toggle" class="dropup">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features<strong class="caret"></strong></a>
-					<ul class="dropdown-menu">
-						<li>
-							<a href="#">Beauty</a>
-						</li>
-						<li>
-							<a href="#">Fashion</a>
-						</li>
-					</ul>
-				</li>--->
-				<li>
-					<a class="page-scroll" href="{% if page.url == '/index.html' %}#about{% else %}{{ '#about' | prepend: site.baseurl }}{% endif %}">About</a>
+				<li {% if page.url == 'about/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ 'about' | prepend: site.baseurl }}">About</a>
 				</li>
-				<li>
-					<a class="page-scroll" href="{% if page.url == '/index.html' %}#findus{% else %}{{ '#findus' | prepend: site.baseurl }}{% endif %}">Contact</a>
+				<li {% if page.url == 'contact/index.html' %} class="active" {% endif %}>
+					<a class="page-scroll" href="{{ 'contact' | prepend: site.baseurl }}">Contact</a>
 				</li>
 			</ul>
 		</div>
