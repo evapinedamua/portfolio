@@ -17,10 +17,13 @@
 				<li>
 					<a class="page-scroll" href="{% if page.url == '/index.html' %}#contact{% else %}{{ '#contact' | prepend: site.baseurl }}{% endif %}">Portfolio</a>
 				</li>
-				<!---<li>
-					<a class="page-scroll" href="{% if page.url == '/index.html' %}#posts{% else %}{{ '#posts' | prepend: site.baseurl }}{% endif %}">Features</a>
-				</li>--->
-				<li id="posts-submenu-toggle" class="dropup">
+				<li>
+					<a class="page-scroll" href="{% if page.url == '/index.html' %}#posts{% else %}{{ '#posts' | prepend: site.baseurl }}{% endif %}">Beauty</a>
+				</li>
+				<li>
+					<a class="page-scroll" href="{% if page.url == '/index.html' %}#posts{% else %}{{ '#posts' | prepend: site.baseurl }}{% endif %}">Fashion</a>
+				</li>
+				<!---<li id="posts-submenu-toggle" class="dropup">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features<strong class="caret"></strong></a>
 					<ul class="dropdown-menu">
 						<li>
@@ -30,7 +33,7 @@
 							<a href="#">Fashion</a>
 						</li>
 					</ul>
-				</li>
+				</li>--->
 				<li>
 					<a class="page-scroll" href="{% if page.url == '/index.html' %}#about{% else %}{{ '#about' | prepend: site.baseurl }}{% endif %}">About</a>
 				</li>
