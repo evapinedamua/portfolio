@@ -61,16 +61,10 @@ a.post-link:focus{
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
 	padding: 0 .3125em .625em;
 }
-<<<<<<< HEAD
 .page{
 	position: relative;
 	z-index: 10;
-	-webkit-transform: translate3d(0,0,10px);
-	transform: translate3d(0,0,10px);
 }
-=======
-	
->>>>>>> parent of a5843b5... increased z index of sections and page classes
 /* This carousel is meant as the main header ful page version and is required to be fixed to top in order for other object to scroll over it */
 .carousel{
     height: 100%;
@@ -78,8 +72,6 @@ a.post-link:focus{
 	top: 0;
 	position: fixed;
 	z-index: 0;
-	-webkit-transform: translate3d(0,0,0px);
-transform: translate3d(0,0,0px);
 }
 .item,
 .active {
@@ -94,11 +86,11 @@ transform: translate3d(0,0,0px);
 .fill {
     width: 100%;
     height: 100%;
-    /*background-position: center;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;*/
+    -o-background-size: cover;
 }
 
 /* Navbar custom styles */
@@ -126,10 +118,8 @@ transform: translate3d(0,0,0px);
 	font-size: 15px;
 	background: rgba(90, 0, 0, 0.67);
 	position: fixed;
-	top: 0;
 	z-index:15;
-	-webkit-transform: translate3d(0,0,15px);
-	transform: translate3d(0,0,15px);
+	top: 0;
 }
 .navbar-custom a,
 .navbar-custom .nav .dropdown-menu a {
@@ -199,7 +189,6 @@ transform: translate3d(0,0,0px);
   text-align: center;
  
 }
-
 /* photofolio page paginated posts */
 .img-post{
 	min-height: 100px;
@@ -243,6 +232,7 @@ ul li:hover span.post-hover {
 section{
 	padding-top: 150px;
 	background-color: #fff;
+	position: relative;
 }
 
 footer {
@@ -281,22 +271,20 @@ footer {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
-<<<<<<< HEAD
-=======
 	.navbar-custom{
-		
+		width: 100%;
+		border-bottom: 1px solid rgba(255,255,255,.3);
+        background: rgba(90, 0, 0, 0.90);
 	}
->>>>>>> parent of 630a08d... modifications to the way the scrolling works
 	.navbar-toggle{
 		color: #fff;
 	}
 	.navbar-logo{
 		display: none!important;
 	}
-	.navbar-custom{
-		width: 100%;
-		border-bottom: 1px solid rgba(255,255,255,.3);
-        background: rgba(90, 0, 0, 0.90);
+	
+	.carousel{
+		top: 57px;
 	}
 	.img-post{
 		max-height: 116px;
