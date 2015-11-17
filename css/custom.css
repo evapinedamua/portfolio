@@ -86,11 +86,13 @@ a.post-link:focus{
 .fill {
     width: 100%;
     height: 100%;
-   
+    /*
+	background-position: center;
    -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+	*/
 }
 
 /* Navbar custom styles */
