@@ -2,9 +2,8 @@ var navbarHeight = 56,
 navHeight = $("header").height()-navbarHeight;
 /* Add padding-top to body so that content of page */
 $(document).ready(function(){
-	var rwdHeight = ($(window).height() < 768) ? 0:navbarHeight;
 	if($("#myCarousel").hasClass("fullpage")){
-		$(".page").css("margin-top", $(window).height()- rwdHeight);
+		$("body").css("padding-top", $(window).height()- navbarHeight);
 	}
 });
 $(window).scroll(function() {

@@ -277,6 +277,12 @@ footer {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
+<<<<<<< HEAD
+=======
+	.navbar-custom{
+		
+	}
+>>>>>>> parent of 630a08d... modifications to the way the scrolling works
 	.navbar-toggle{
 		color: #fff;
 	}
