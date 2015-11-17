@@ -90,11 +90,11 @@ transform: translate3d(0,0,0px);
 .fill {
     width: 100%;
     height: 100%;
-    background-position: center;
+    /*background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover;*/
 }
 
 /* Navbar custom styles */
@@ -246,7 +246,7 @@ footer {
 }
 
 /* full page video styles */
-#background {
+/*#background {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -261,7 +261,7 @@ footer {
     transform: translateX(-50%) translateY(-50%);
     background: url(polina.jpg) no-repeat;
     background-size: cover;
-}
+}*/
 
 /* CUSTOM MEDIA QUERIES */
 
