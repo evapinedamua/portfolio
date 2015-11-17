@@ -64,8 +64,6 @@ a.post-link:focus{
 .page{
 	position: relative;
 	z-index: 10;
-	-webkit-transform: translate3d(0,0,10px);
-	transform: translate3d(0,0,10px);
 }
 /* This carousel is meant as the main header ful page version and is required to be fixed to top in order for other object to scroll over it */
 .carousel{
@@ -74,8 +72,6 @@ a.post-link:focus{
 	top: 0;
 	position: fixed;
 	z-index: 0;
-	-webkit-transform: translate3d(0,0,0px);
-transform: translate3d(0,0,0px);
 }
 .item,
 .active {
@@ -90,8 +86,8 @@ transform: translate3d(0,0,0px);
 .fill {
     width: 100%;
     height: 100%;
-    /*background-position: center;
-    -webkit-background-size: cover;
+    background-position: center;
+    /*-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;*/
@@ -124,8 +120,6 @@ transform: translate3d(0,0,0px);
 	position: fixed;
 	top: 0;
 	z-index:15;
-	-webkit-transform: translate3d(0,0,15px);
-	transform: translate3d(0,0,15px);
 }
 .navbar-custom a,
 .navbar-custom .nav .dropdown-menu a {
