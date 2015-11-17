@@ -3,17 +3,22 @@ navHeight = $("header").height()-navbarHeight;
 /* Add padding-top to body so that content of page */
 $(document).ready(function(){
 	if($("#myCarousel").hasClass("fullpage")){
-		$("body").css("padding-top", $(window).height()- navbarHeight);
+		if($(window).width() > 767){
+			$("body").css("padding-top", $(window).height()- navbarHeight);
+		}else{
+			$("body").css("padding-top", $(window).height());
+		}
 	}
 });
 $(window).scroll(function() {
-	var navbar = $("#stickynav");
-	var scrollTop = $(this).scrollTop();
-	console.log("(" + scrollTop + " >= " + navHeight + "): " + (scrollTop >= navHeight));
-	if (scrollTop >= navHeight) {  // stick to top of window
-		navbar.css("position", "fixed").css("top", "0px");
-	} else { // allow to scroll to bottom of window, no need to stick to bottom
-		navbar.css("position", "relative");
+	if($(window).width() > 767){
+		var navbar = $("#stickynav");
+		var scrollTop = $(this).scrollTop();
+		if (scrollTop >= navHeight) {  // stick to top of window
+			navbar.css("position", "fixed").css("top", "0px");
+		} else { // allow to scroll to bottom of window, no need to stick to bottom
+			navbar.css("position", "relative");
+		}
 	}
 	/*
 	if(scrollTop > 10){
