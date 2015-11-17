@@ -7,15 +7,14 @@ $(document).ready(function(){
 	}
 });
 $(window).scroll(function() {
-	/*
-	var navbar = $(".navbar");
-	var scrollTop = $(this).scrollTop()
+	var navbar = $("#stickynav");
+	var scrollTop = $(this).scrollTop();
+	console.log("(" + scrollTop + " >= " + navHeight + "): " + (scrollTop >= navHeight));
 	if (scrollTop >= navHeight) {  // stick to top of window
-		navbar.addClass('navbar-fixed-top');
+		navbar.css("position", "fixed").css("top", "0px");
 	} else { // allow to scroll to bottom of window, no need to stick to bottom
-		navbar.removeClass('navbar-fixed-top');
+		navbar.css("position", "relative");
 	}
-	*/
 	/*
 	if(scrollTop > 10){
 		navbar.addClass("top-nav-collapse");  // collapse height of menu to 50 and adda  background

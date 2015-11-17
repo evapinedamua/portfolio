@@ -117,9 +117,8 @@ a.post-link:focus{
     font-family: "Novecentowide-Normal";
 	font-size: 15px;
 	background: rgba(90, 0, 0, 0.67);
-	position: fixed;
+	position: relative;
 	z-index:15;
-	top: 0;
 }
 .navbar-custom a,
 .navbar-custom .nav .dropdown-menu a {
@@ -281,10 +280,6 @@ footer {
 	}
 	.navbar-logo{
 		display: none!important;
-	}
-	
-	.carousel{
-		top: 57px;
 	}
 	.img-post{
 		max-height: 116px;
