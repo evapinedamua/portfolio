@@ -8,6 +8,7 @@ $(document).ready(function(){
 	}
 });
 $(window).scroll(function() {
+	/*
 	var navbar = $(".navbar");
 	var scrollTop = $(this).scrollTop()
 	if (scrollTop >= navHeight) {  // stick to top of window
@@ -15,6 +16,8 @@ $(window).scroll(function() {
 	} else { // allow to scroll to bottom of window, no need to stick to bottom
 		navbar.removeClass('navbar-fixed-top');
 	}
+	*/
+	/*
 	if(scrollTop > 10){
 		navbar.addClass("top-nav-collapse");  // collapse height of menu to 50 and adda  background
 		$("#posts-submenu-toggle").removeClass().addClass("dropdown");  //make the dropdown drop UP
@@ -22,6 +25,7 @@ $(window).scroll(function() {
 		navbar.removeClass("top-nav-collapse");  // remove translucent bg from nav bar and increase height to 90 (50 +20 padding top and bottom)
 		$("#posts-submenu-toggle").removeClass().addClass("dropup");  // make the dropdown drop DOWN
     }
+	*/
 });
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
