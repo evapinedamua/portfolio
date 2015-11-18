@@ -83,6 +83,15 @@ a.post-link:focus{
 .carousel-inner {
     height: 100%;
 }
+#slide0{
+	background-image:url('/img/landing.jpg');
+}
+#slide1{
+	background-image:url('/img/landing.jpg');
+}
+#slide2{
+	background-image:url('/img/landing.jpg');
+}
 
 /* Background images are set within the HTML using inline CSS, not here */
 .fill {
@@ -242,7 +251,7 @@ footer {
 }
 
 /* full page video styles */
-/*#background {
+#background {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -257,7 +266,7 @@ footer {
     transform: translateX(-50%) translateY(-50%);
     background: url(polina.jpg) no-repeat;
     background-size: cover;
-}*/
+}
 
 /* CUSTOM MEDIA QUERIES */
 
@@ -265,6 +274,9 @@ footer {
 
 /* Smaller than mobile iPhone in Landscape background: rgba(10, 10, 10, 0.67);background: rgba(90, 0, 0, 0.67);*/
 @media (max-width: 767px) {
+	body{
+		padding-top: 0;
+	}
     ul.banner-social-buttons li {
         margin-bottom: 20px;
         padding: 5px;
@@ -283,6 +295,22 @@ footer {
 	}
 	.navbar-logo{
 		display: none!important;
+	}
+	.carousel{
+		position: relative;
+		height: 387px;
+	}
+	#slide0{
+		background-image:url('/img/landing_412x696.jpg');
+	}
+	#slide1{
+		background-image:url('http://placekitten.com/412/696');
+	}
+	#slide2{
+		background-image:url('/img/landing_412x696.jpg');
+	}
+	section{
+		padding-top: 50px;
 	}
 	.img-post{
 		max-height: 116px;
