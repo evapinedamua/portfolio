@@ -84,7 +84,7 @@ a.post-link:focus{
     height: 100%;
 }
 #slide0{
-	background-image:url('/img/landing.jpg');
+	background-image:url('../img/landing.jpg');
 }
 #slide1{
 	background-image:url('/img/landing.jpg');
