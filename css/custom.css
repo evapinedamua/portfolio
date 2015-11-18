@@ -128,7 +128,7 @@ a.post-link:focus{
     text-transform: uppercase;
     font-family: "Novecentowide-Normal";
 	font-size: 15px;
-	background: rgba(10, 10, 10, 0.67);
+	background: rgba(10, 10, 10, 0.9);
 	position: fixed;
 	top: 0;
 }
@@ -183,7 +183,7 @@ a.post-link:focus{
         transition: background .5s ease-in-out,padding .5s ease-in-out;
 		text-shadow: none;
 		font-size: 15px;
-		background: rgba(10, 10, 10, 0.67);
+		background: rgba(10, 10, 10, 0.9);
     }
     .navbar-custom.top-nav-collapse {
         padding: 0;
@@ -288,7 +288,7 @@ footer {
 	.navbar-custom{
 		width: 100%;
 		border-bottom: 1px solid rgba(255,255,255,.3);
-        background: rgba(10, 10, 10, 0.67);
+        background: rgba(10, 10, 10, 0.9);
 	}
 	.navbar-toggle{
 		color: #fff;
