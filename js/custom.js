@@ -1,14 +1,14 @@
-var navbarHeight = 56,
-navHeight = $("header").height()-navbarHeight;
+//var navbarHeight = 56,
+//navHeight = $("header").height()-navbarHeight;
 /* Add padding-top to body so that content of page */
 $(document).ready(function(){
-	if($("#myCarousel").hasClass("fullpage")){
+	/*if($("#myCarousel").hasClass("fullpage")){
 		if($(window).width() > 767){
 			$("body").css("padding-top", $(window).height()- navbarHeight);
 		}else{
 			$("body").css("padding-top", $(window).height());
 		}
-	}
+	}*/
 });
 $(window).scroll(function() {
 	/*if($(window).width() > 767){

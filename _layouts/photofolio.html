@@ -5,17 +5,18 @@
 
 <body id="page-top">
 	
-	{% include header_fullpage_carousel.html %}
-	{% include navbar.html %}
 	<div class="page">
 	
-	
-	
+	{% include header_fullpage_carousel.html %}
 	
 	{{ content }}
+	
 	</div>
-    <!-- Footer -->
-   {% include footer.html %}
+	
+	{% include navbar.html %}<!--- navbar is position here so taht it is stacked on top of the rest of the content --->
+    
+	<!-- Footer -->
+	{% include footer.html %}
 
 </body>
 

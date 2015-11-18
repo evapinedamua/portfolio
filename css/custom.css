@@ -4,6 +4,10 @@ body {
 	color: #000;
     background-color: #ddd;
 }
+/* now that navbar is fixed to top, the padding can be set to the height of the navbar */
+body{
+	padding-top: 100vh;
+}
 h1,
 h2,
 h3,
@@ -117,7 +121,6 @@ a.post-link:focus{
 	background: rgba(10, 10, 10, 0.67);
 	position: fixed;
 	top: 0;
-	z-index:1;
 }
 .navbar-custom a,
 .navbar-custom .nav .dropdown-menu a {
