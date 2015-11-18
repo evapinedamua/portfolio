@@ -88,7 +88,7 @@ a.post-link:focus{
 .fill {
     width: 100%;
     height: 100%;
-    background-position: center;
+    background-position: no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
