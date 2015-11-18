@@ -301,13 +301,13 @@ footer {
 		height: 387px;
 	}
 	#slide0{
-		background-image:url('/img/landing_412x696.jpg');
+		background-image:url('/img/landing.jpg');
 	}
 	#slide1{
 		background-image:url('http://placekitten.com/412/696');
 	}
 	#slide2{
-		background-image:url('/img/landing_412x696.jpg');
+		background-image:url('/img/landing.jpg');
 	}
 	section{
 		padding-top: 50px;
