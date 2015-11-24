@@ -10,7 +10,7 @@ published: true
 	<div class="container text-center">
 		<h2><a href="{{ '/portfolio' | prepend: site.baseurl }}">Portfolio samples</a></h2>
 		<div style="margin-top:30px;">
-			<ul class="row list-unstyled nomargin">
+			<ul class="row list-unstyled">
 			{% for post in paginator.posts limit:8 %}
 				{% if post.category != 'youtube' %}
 				<li class="col-xs-6 col-sm-3 ">
