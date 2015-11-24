@@ -1,21 +1,21 @@
 <!-- Navigation -->
 <nav id="stickynav" class="navbar navbar-custom" role="navigation">
-	<div class="container nabvar-inner">
+	<div class="nav-container nabvar-inner">
 		<div class="navbar-header text-center">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 				<i class="fa fa-bars"></i>
 			</button>
-			
+			<a href="{% if page.url == '/index.html' %}#page-top{% else %}{{ site.baseurl }}/{% endif %}">
+				<img class="navbar-logo" src="{{ site.baseurl }}/img/logo_white.png"/>
+			</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse navbar-main-collapse">
 			<ul class="nav nav-justified">
 				<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-				<li class="page-scroll navbar-logo">
-					<a href="{% if page.url == '/index.html' %}#page-top{% else %}{{ site.baseurl }}/{% endif %}">
-						<img src="{{ site.baseurl }}/img/logo_white.png" />
-					</a>
+				<li class="page-scroll hidden">
+					
 				</li>
 				<li {% if page.url == '/portfolio/index.html' %} class="active" {% endif %}>
 					<a class="page-scroll" href="{{ '/portfolio' | prepend: site.baseurl }}">Portfolio</a>
