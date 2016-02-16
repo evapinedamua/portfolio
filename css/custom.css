@@ -87,7 +87,7 @@ a.post-link:focus{
     height: 100%;
 }
 #slide0{
-	background-image:url('../img/landing.jpg');
+	background-image:url('../img/landing_test.png');
 }
 #slide1{
 	background-image:url('../img/landing.jpg');
@@ -100,7 +100,7 @@ a.post-link:focus{
 .fill {
     width: 100%;
     height: 100%;
-    background-position: center; 
+    /*background-position: center;*/ 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -321,7 +321,7 @@ footer {
 		height: 387px;
 	}
 	#slide0{
-		background-image:url('../img/landing.jpg');
+		background-image:url('../img/landing_test.png');
 	}
 	#slide1{
 		background-image:url('http://placekitten.com/412/696');
